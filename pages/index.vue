@@ -3,7 +3,7 @@
         <div class="px-5">
             <p>Digite o nome do medicamento em seguida escolha o botão "buscar"</p>
         </div>
-        <div class="input-group mb-5 px-5">
+        <div class="input-group px-0 px-md-5 mb-5 px-0">
             <input v-model="searchedMedicine" class="form-control" placeholder="Digite o nome de um medicamento" />
             <button @click="performSearch" class="btn btn btn-primary">Buscar</button>
         </div>
