@@ -1,75 +1,75 @@
-# Nuxt 3 Minimal Starter
+# MedSearch
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Este é um aplicativo web construído com Nuxt.js para buscar informações sobre medicamentos. Os usuários podem inserir o nome de um medicamento, realizar uma busca e visualizar os resultados. Além disso, há uma funcionalidade para ver detalhes adicionais sobre um medicamento específico.
 
-## Setup
+## Instalação
 
-Make sure to install the dependencies:
+Antes de começar, certifique-se de ter [Node.js](https://nodejs.org/) na versão v18.17.1 instalado em seu sistema.
 
-```bash
-# npm
-npm install
+1. **Clone o repositório:**
 
-# pnpm
-pnpm install
+   ```bash
+   git clone <URL_DO_SEU_REPOSITORIO>
+   cd nuxt-app
+   ```
 
-# yarn
-yarn install
+2. **Instale as dependências:**
 
-# bun
-bun install
-```
+   ```bash
+   npm install
+   ```
 
-## Development Server
+## Scripts Disponíveis
 
-Start the development server on `http://localhost:3000`:
+No diretório do seu projeto, você pode executar os seguintes scripts:
 
-```bash
-# npm
-npm run dev
+- **Compilar o aplicativo para produção:**
 
-# pnpm
-pnpm run dev
+  ```bash
+  npm run build
+  ```
 
-# yarn
-yarn dev
+- **Iniciar o servidor de desenvolvimento:**
 
-# bun
-bun run dev
-```
+  ```bash
+  npm run dev
+  ```
 
-## Production
+- **Gerar arquivos estáticos para o aplicativo:**
 
-Build the application for production:
+  ```bash
+  npm run generate
+  ```
 
-```bash
-# npm
-npm run build
+- **Iniciar um servidor de pré-visualização para os arquivos gerados:**
 
-# pnpm
-pnpm run build
+  ```bash
+  npm run preview
+  ```
 
-# yarn
-yarn build
+Após executar o script de build ou generate, os arquivos estáticos podem ser encontrados no diretório `dist`.
 
-# bun
-bun run build
-```
+## Dependências do Projeto
 
-Locally preview production build:
+- **[@nuxt/devtools](https://github.com/nuxt/nuxt-devtools):** Ferramenta de desenvolvimento para Nuxt.js.
+- **[Nuxt.js](https://nuxtjs.org/):** Framework Vue.js para construção de aplicativos web universais.
+- **[Vue.js](https://vuejs.org/):** Framework JavaScript progressivo para construção de interfaces de usuário.
+- **[Vue Router](https://router.vuejs.org/):** Roteador oficial para aplicativos Vue.js.
 
-```bash
-# npm
-npm run preview
+## Dependências de Estilo
 
-# pnpm
-pnpm run preview
+- **[@nuxt/ui](https://github.com/nuxt/components):** Conjunto de componentes de UI para Nuxt.js.
+- **[Bootstrap](https://getbootstrap.com/):** Um dos frameworks de design mais populares e confiáveis.
 
-# yarn
-yarn preview
+## Estrutura do Projeto
 
-# bun
-bun run preview
-```
+- **`/components`:** Contém componentes reutilizáveis.
+- **`/layouts`:** Define layouts para diferentes seções do aplicativo.
+- **`/pages`:** Cada arquivo `.vue` nesta pasta corresponde a uma rota no aplicativo.
+- **`/plugins`:** Contém plugins Nuxt.js e outros recursos.
+- **`/static`:** Arquivos estáticos como imagens, favicons, etc.
+- **`/store`:** Armazena arquivos para gerenciamento de estado Vuex.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE.md).

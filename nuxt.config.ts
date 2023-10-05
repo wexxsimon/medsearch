@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   alias: {
-    css: "/<rootDir>/assets/css",
+    css: '/<rootDir>/assets/css',
 
   },
   // app: {
@@ -10,6 +10,8 @@ export default defineNuxtConfig({
   // },
   css: [
     '@/assets/css/main.css',
-    'bootstrap/dist/css/bootstrap.css'
-],
-})
+    'bootstrap/dist/css/bootstrap.css',
+  ],
+  modules: ['@nuxt/ui'],
+  ssr: false,
+});
