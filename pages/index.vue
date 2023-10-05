@@ -104,6 +104,7 @@ export default {
         },
         async performSearch() {
             if (this.searchedMedicine !== '') {
+                this.searchFilter = '';
                 try {
                     this.searchResults = await this.fetchData(this.searchedMedicine);
                     this.printSearchResults(this.searchResults);
